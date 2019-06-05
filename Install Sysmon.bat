@@ -17,8 +17,8 @@ pushd "C:\ProgramData\sysmon\"
 echo [+] Downloading Sysmon...
 @powershell (new-object System.Net.WebClient).DownloadFile('https://live.sysinternals.com/Sysmon64.exe','C:\ProgramData\sysmon\sysmon64.exe')"
 echo [+] Downloading Sysmon config...
-@powershell (new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TheRealEliteOwl/Sysmon-v9/sysmonconfig.xml','C:\ProgramData\sysmon\sysmonconfig.xml')"
-@powershell (new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TheRealEliteOwl/Sysmon-v9/Auto_Update.bat','C:\ProgramData\sysmon\Auto_Update.bat')"
+@powershell (new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TheRealEliteOwl/Sysmon-v9/master/sysmonconfig.xml','C:\ProgramData\sysmon\sysmonconfig.xml')"
+@powershell (new-object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/TheRealEliteOwl/Sysmon-v9/master/Auto_Update.bat','C:\ProgramData\sysmon\Auto_Update.bat')"
 sysmon64.exe -accepteula -i sysmonconfig-export.xml
 sc failure Sysmon64 actions= restart/10000/restart/10000// reset= 120
 echo [+] Sysmon Successfully Installed!
