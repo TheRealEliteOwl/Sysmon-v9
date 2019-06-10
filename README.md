@@ -9,7 +9,7 @@ This is a Microsoft Sysinternals Sysmon configuration file template with default
 
 The file provided should function as a great starting point for system monitoring in a self-contained package. This configuration and results should give you a good idea of what's possible for Sysmon.
 
-      sysmonconfig-export.xml
+      sysmonconfig.xml
 
 Because virtually every line is commented and sections are marked with explanations, it should also function as a tutorial for Sysmon and a guide to critical monitoring areas in Windows systems. It demonstrates a lot of what I wish I knew when I began with Sysmon in 2014.
 
@@ -27,13 +27,13 @@ Install
 
 Run with administrator rights
 
-sysmon.exe -accepteula -i sysmonconfig-export.xml
+sysmon.exe -accepteula -i sysmonconfig.xml
 
 Update existing configuration
 
 Run with administrator rights
 
-sysmon.exe -c sysmonconfig-export.xml
+sysmon.exe -c sysmonconfig.xml
 
 Uninstall
 
