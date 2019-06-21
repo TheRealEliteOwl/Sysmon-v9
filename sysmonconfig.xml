@@ -3191,6 +3191,10 @@
 		<WmiEvent onmatch="exclude">
 		</WmiEvent>
 		</RuleGroup>
+		<EventFiltering>
+    			<DnsQuery onmatch="exclude">
+    			</DnsQuery>
+  		</EventFiltering>
 	<!--SYSMON EVENT ID 255 : ERROR-->
 		<!--"This event is generated when an error occurred within Sysmon. They can happen if the system is under heavy load
 			and certain tasked could not be performed or a bug exists in the Sysmon service. You can report any bugs on the
