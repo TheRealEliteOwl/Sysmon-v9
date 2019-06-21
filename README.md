@@ -1,4 +1,4 @@
-# Sysmon-v9
+# Sysmon-v10
 
 The Master is based on the new Sysmon 9.0 rule groups.
 
